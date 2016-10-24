@@ -1,0 +1,56 @@
+BaseURL = "http://www.yuzhan.me/"
+LanguageCode = "zh-CN"
+HasCJKLanguage = true
+Title = "微端生活"
+Theme = "hugo-pacman-theme"
+pygmentsStyle = "default"
+pygmentsUseClasses = true
+RSSUri = "feed.xml"
+
+[Author]
+  Name = "yuzhanwaiting"
+
+[Params]
+  AuthorHomepage = "http://www.yuzhan.me/"
+  BottomIntroduce = "程序 <br/> 人生"
+  Description = ""
+  Subtitle = "程序生活和小说创作者"
+  GitHub = "yuzhanwaiting"
+  Imglogo = "img/author.jpg"
+  AuthorImg = "img/author.jpg"
+
+  # 日期时间格式
+  DateFormat = "2006年01月02日"
+  MonthFormat = "2006年01月"
+  FancyBox = true
+
+  [Params.singlePages]
+    name = "about"
+
+  # 使用多说评论
+  #[Params.DuoShuo]
+  #  ShortName = "hbphp"
+
+
+  # 多语言字符串
+  [Params.Strings]
+    Search = "搜索"
+    PageNotFound = "你访问的页面不存在"
+    ShowSideBar = "显示侧边栏"
+    HideSideBar = "隐藏侧边栏"
+    Categories = "分类"
+    Archive = "归档"
+    Tags = "标签"
+    TagCloud = "标签云"
+    Rss = "RSS 订阅"
+    TableOfContents = "文章目录"
+
+[Menu]
+  [[Menu.Main]]
+    Name = "首页"
+    URL = "/"
+    Weight = 1
+  [[Menu.Main]]
+    Name = "关于"
+    URL = "/about"
+    Weight = 2
