@@ -1,6 +1,7 @@
 ---
 title: github pages 博客搭建
 date: 2015-12-17
+toc: true
 categories: 
     - 其他
 tags: 
@@ -17,13 +18,13 @@ tags:
 
 ## 操作说明：
 
-### 1 环境准备
+### 环境准备
 
 * 系统： `Linux(ubuntu)`,`Mac OS`,`Windows`(不推荐使用)
 * 软件： `ruby`, `rubygems`, `jekyll`
 * 平台： `github`
 
-### 2 项目创建
+### 项目创建
 
 * 在`github`上创建新仓库，命名为: `username.github.io`
 此处`username` 必须为`github`帐号名称,
@@ -48,7 +49,7 @@ tags:
 * 访问页面 `http://username.github.io` 则显示刚写入文件的信息
 
 
-### 3 本地环境创建（以ubuntu为参考）
+### 本地环境创建（以ubuntu为参考）
 
 * 安装`ruby-install`，此用于安装ruby环境
 ```
@@ -93,7 +94,7 @@ https://ruby.taobao.org
 
 至此，环境搭建完成
 
-### 4. jekyll简单介绍
+### jekyll简单介绍
 
 #### 目录结构
 ```
@@ -118,18 +119,19 @@ https://ruby.taobao.org
 ```
 
 结构说明：
+    
 
-| 文件目录  |  描述  | 
-| ------------ | -------- | 
-| _config.yml  | 保存配置数据。 |
-| _drafts      | drafts 未发布的文章。 |
-| _includes   | 你可以加载这些包含部分到你的布局或者文章中以方便重用.这个标签{% include file.ext %} 来把文件 _includes/file.ext 包含进来。 |
-| _layouts   | layouts 是包裹在文章外部的模板。布局可以在 YAML 头信息中根据不同文章进行选择。 这将在下一个部分进行介绍。标签 {{ content }} 可以将content插入页面中 |
-| _posts   | 这里放的就是你的文章了 |
-| _data   | 存放全站全局变量。格式为yml或yaml。如果存放的文件为member.yml，那么访问里面的内容就是site.data.member |
-| _site   | 一旦 Jekyll 完成转换，就会将生成的页面放在这里（默认）。最好将这个目录放进你的 .gitignore 文件中。 |
-| index.html   | 全局首页 |
-| 其他文件   | 其他一些未被提及的目录和文件如  css 还有 images 文件夹， favicon.ico 等文件都将被完全拷贝到生成的 site 中 |
+| 文件目录    | 描述                                                                                                                                                |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| _config.yml | 保存配置数据                                                                                                                                        |
+| _drafts     | drafts 未发布的文章                                                                                                                                 |
+| _includes   | 你可以加载这些包含部分到你的布局或者文章中以方便重用.这个标签{% include file.ext %} 来把文件 _includes/file.ext 包含进来。                          |
+| _layouts    | layouts 是包裹在文章外部的模板。布局可以在 YAML 头信息中根据不同文章进行选择。 这将在下一个部分进行介绍。标签 {{ content }} 可以将content插入页面中 |
+| _posts      | 这里放的就是你的文章了                                                                                                                              |
+| _data       | 存放全站全局变量。格式为yml或yaml。如果存放的文件为member.yml，那么访问里面的内容就是site.data.member                                               |
+| _site       | 一旦 Jekyll 完成转换，就会将生成的页面放在这里（默认）。最好将这个目录放进你的 .gitignore 文件中                                                    |
+| index.html  | 全局首页                                                                                                                                            |
+| 其他文件    | 其他一些未被提及的目录和文件如,css 还有 images 文件夹， favicon.ico 等文件都将被完全拷贝到生成的 site 中                                            |
 
 
 #### 配置说明
@@ -160,17 +162,17 @@ version:          1.0.0
 
 配置说明：
 
-| 配置项 | 说明 | 
-|:----------|:--------:| 
-| highlighter  | 高亮组件，一般选择pygments |
-| encoding     | 博客编码，一般贴写"utf-8" |
-| title        | 博客标题                 |
-| tagline      | 博客标语                 |
-| description  | 博客描述 |
-| url          | 博客地址 |
-| paginate     | 博客每页页数 |
-| paginate_path | 博客分页样式 |
-| gems     | 依赖哪些库 |
+| 配置项        | 说明                       |
+|---------------|----------------------------|
+| highlighter   | 高亮组件，一般选择pygments |
+| encoding      | 博客编码，一般贴写"utf-8"  |
+| title         | 博客标题                   |
+| tagline       | 博客标语                   |
+| description   | 博客描述                   |
+| url           | 博客地址                   |
+| paginate      | 博客每页页数               |
+| paginate_path | 博客分页样式               |
+| gems          | 博客分页样式               |
 
 
 #### 编写博客
@@ -186,7 +188,7 @@ version:          1.0.0
 
 * 写好文档，直接推送至`github`，等几分钟后就可以正常访问
 
-### 5. 配置域名
+### 配置域名
 如果需要自定义域名,可以直接将域名作`CNAME`解析为 `username.github.io.`,注意后面有个`.`,几分钟后就可以用新的域名访问`github pages`博客了
 
 
